@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".05"
+        android:id="@+id/guide_h_.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85"
+        android:id="@+id/guide_h_85"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        android:id="@+id/guide_v_0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".1"
+        android:id="@+id/guide_v_10"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1"
+        android:id="@+id/guide_h_10"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guide_v_90"
+        app:layout_constraintGuide_percent=".90"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".20"
+        android:id="@+id/guide_h_20"/>
+
+    <TextView
+        android:id="@+id/tvTravelOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TRAVELOPTIONS"
+        android:textSize="@dimen/margin_45dp"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif-monospace"
+        app:layout_constraintBottom_toBottomOf="@id/guide_h_.05"
+        app:layout_constraintStart_toStartOf="@id/guide_v_0.5"
+        app:layout_constraintEnd_toEndOf="@id/guide_h_.05"
+        app:layout_constraintTop_toTopOf="@id/guide_h_.05"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMODE"
+        app:layout_constraintTop_toBottomOf="@+id/tvTravelOptions"
+        android:text="@string/MODE"
+        app:layout_constraintLeft_toRightOf="@id/guide_h_10"
+        app:layout_constraintTop_toTopOf="@id/guide_h_10"
+        android:textSize="@dimen/margin_25dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:hint="Enter Hotel Name"
+        android:textSize="@dimen/margin_20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTravelOptions" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCharges"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        android:text="@string/Charges"
+        android:textSize="@dimen/margin_25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCharges"
+        app:layout_constraintTop_toBottomOf="@+id/tvCharges"
+        android:hint="Enter Daily Charges "
+        android:textSize="@dimen/margin_20dp"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTime"
+        app:layout_constraintTop_toBottomOf="@+id/etCharges"
+        android:text="@string/TIME"
+        android:textSize="@dimen/margin_25dp"/>
+
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="119dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#964B00"
+        android:gravity="center"
+        android:text="@string/OK"
+        android:textSize="@dimen/margin_30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

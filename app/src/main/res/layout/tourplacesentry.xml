@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_20dp"
+            tools:context=".TravelData">
+
+            <TextView
+                android:id="@+id/tvPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginEnd="5dp"
+                android:text="TOUR PLACE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etHotelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvPlace"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="@drawable/round"
+                android:hint="Enter Destination"
+                android:padding="@dimen/margin_15dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginEnd="5dp"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEnterAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvPlace"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="@drawable/round"
+                android:hint="Enter Address"
+                android:padding="@dimen/margin_15dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvCharges"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginEnd="5dp"
+                android:text="Daily Charges"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEnterCharges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvPlace"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="@drawable/round"
+                android:hint="Enter Daily Charges"
+                android:padding="@dimen/margin_15dp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etEnterplace"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:text="@string/STARTDATE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvStartDATE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvStartDATE"
+                android:layout_centerVertical="true"
+                android:background="@drawable/round"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_date"
+                android:drawableTint="@color/red"
+                android:padding="@dimen/margin_15dp"
+                android:hint="Select Start Date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvStartDATE"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:text="@string/ENDDATE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvEndDate"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/round"
+                android:drawableRight="@drawable/ic_date"
+                android:drawableTint="@color/red"
+                android:padding="@dimen/margin_15dp"
+                android:hint="Select End Date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_15dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvEndDate1"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_30dp"
+                android:buttonTint="@color/black"
+                android:text="VISITED"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/margin_20dp" />
+
+
+            <Button
+                android:id="@+id/btnAddPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:padding="@dimen/margin_15dp"
+                android:text="ADD Details"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:padding="@dimen/margin_15dp"
+                android:text="Close"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

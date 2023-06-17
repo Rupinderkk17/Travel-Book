@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/travellingList2">
+    <fragment
+        android:id="@+id/travellingList2"
+        android:name="com.rupinder.travelbook.fragments.TravellingList"
+        android:label="fragment_travelling_list"
+        tools:layout="@layout/fragment_travelling_list" >
+        <action
+            android:id="@+id/action_splashActivity_to_travellinglist2"
+            app:destination="@id/travelData2" />
+    </fragment>
+    <fragment
+        android:id="@+id/travelData2"
+        android:name="com.rupinder.travelbook.fragments.TravelData"
+        android:label="fragment_travel_data"
+        tools:layout="@layout/fragment_travel_data" >
+        <action
+            android:id="@+id/action_travelData2_to_travellingList2"
+            app:destination="@id/travellingList2" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchoptions"
+        android:name="com.rupinder.travelbook.fragments.Searchoptions"
+        android:label="fragment_searchoptions"
+        tools:layout="@layout/fragment_searchoptions" >
+        <action
+            android:id="@+id/action_searchoptions_to_foodFragment"
+            app:destination="@id/foodFragment" />
+        <action
+            android:id="@+id/action_searchoptions_to_travelByFragment"
+            app:destination="@id/travelByFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/hotels"
+        android:name="com.rupinder.travelbook.fragments.HotelsFragment"
+        android:label="Hotels" />
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.rupinder.travelbook.fragments.FoodFragment"
+        android:label="FoodFragment" >
+        <action
+            android:id="@+id/action_foodFragment_to_searchoptions"
+            app:destination="@id/searchoptions" />
+    </fragment>
+    <fragment
+        android:id="@+id/travelByFragment"
+        android:name="com.rupinder.travelbook.fragments.TravelByFragment"
+        android:label="TravelByFragment" >
+        <action
+            android:id="@+id/action_travelByFragment_to_searchoptions"
+            app:destination="@id/searchoptions" />
+    </fragment>
+    <fragment
+        android:id="@+id/tourplacesFragment"
+        android:name="com.rupinder.travelbook.fragments.TourPlacesFragment"
+        android:label="TourPlacesFragment" >
+        <action
+            android:id="@+id/action_searchoptions_to_tourplacesFragment"
+            app:destination="@id/searchoptions" />
+    </fragment>
+    <fragment
+        android:id="@+id/memoriesFragment"
+        android:name="com.rupinder.travelbook.fragments.MemoriesFragment"
+        android:label="MemoriesFragment" />
+</navigation>
+
